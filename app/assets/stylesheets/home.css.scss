@@ -1,0 +1,221 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	font-size: 14px;
+	margin:0;
+   padding:0;
+   font-family: "Helvetica Neue";
+   background-image: url("dark_navy_background.jpg");
+   font-weight: 300;
+   color: #F5F5F5;
+}
+
+h3 {
+	text-align: center;
+	font-family: "Monotype Corsiva";
+	font-size: 24px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: #E8E8E8;
+}
+
+.orange_underline {	
+	border-bottom: 0.01em solid #FCB968;;
+}
+
+.myorange {
+	color: #FCB968;
+}
+
+#header {
+	height: 60px;
+	width: 100%;
+	margin: auto;	
+
+	.menu {
+		width: 900px;
+
+		margin: auto;
+
+		.logo {
+			float: left;
+			padding-top: 20px;
+			
+			img {
+				width: 200px;
+			}
+
+
+			a {
+				color: #FCB968;
+				font-family: "Monotype Corsiva";
+				text-decoration: none;
+				
+				font-size: 25px;
+			}
+			
+		}
+
+		.menuitems {
+			float: right;
+			height: 60px;
+			padding-top: 15px;
+
+			ul li {
+				display: inline;
+				
+				a {
+					color: white;
+	    			padding: 10px 20px;
+	    			text-decoration: none;
+	    			font-size: 13px;
+	    			text-transform: uppercase;
+	    			letter-spacing: 2px;
+				}
+
+				.sliding-middle-out {
+					display: inline-block;
+					position: relative;		
+				}
+				.sliding-middle-out:after {
+					content: '';
+					display: block;
+					margin: auto;
+					height: 1px;
+					width: 0px;
+					background: transparent;
+					transition: width .5s ease, background-color .5s ease;
+					margin-top: 5px;
+				}
+				
+				.sliding-middle-out:hover:after {
+					width: 100%;
+					background: #FCB968;
+				}
+
+				.active_link {
+					width: 100%;
+					background: #FCB968;
+				}
+			}
+		}
+
+		
+	}
+}
+
+#main {	
+	width: 900px;
+	min-height: 450px;
+	margin: auto;	
+	margin-top: 60px;
+}
+
+#footer {
+	margin-top: 100px;
+	clear: both;
+	height: 60px;
+	width: 900px;
+	
+	margin: auto;	
+	margin-top: 30px;
+	font-size: 13px;	
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	.hvr-bounce-in.hover {
+		-webkit-transform:scale(1.2);transform:scale(1.2);-webkit-transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36);transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36);
+	}
+}
+
+p.title {
+	padding-top: 40px;
+	padding-bottom: 10px;
+	font-size: 22px;
+	color: #14334f;
+	text-align: center; 
+	text-transform: uppercase;
+}
+
+.me_section {
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-family: "Helvetica Neue";
+	font-weight: 100;
+}
+
+
+
+.work_section {
+
+	clear: both;
+
+	ul.work_list {
+		padding: 0;
+ 	   list-style-type: none;
+	}
+	
+	ul.work_list li {
+		padding-bottom: 35px;			
+		overflow: hidden;	
+	}
+
+
+	.work_avatar {
+		float: left;
+		
+		
+		overflow: hidden;	
+
+		img {
+			width: 170px;
+		}
+	}
+
+	.work_description {
+		float: left;
+		margin-left: 30px;
+		width: 650px;
+
+		.work_company {
+			color: #db8925;
+			text-transform: uppercase;
+			font-size: 15px;
+		}
+
+		.work_position {
+			color: #155a63;
+			font-size: 14px;
+		}
+
+		.work_date {
+			color: #ababab;
+			font-size: 13px;
+			
+		}
+
+		.one_skill {
+			 background-color: #eef2f8;
+		    border: 1px solid #cad6e9;
+		    display: inline-block;
+		    float: left;
+		    margin-bottom: 5px;
+		    margin-right: 5px;
+		    padding-left: 2px;
+		    padding-right: 5px;
+		    vertical-align: middle;
+		    font-size: 13px;
+		}
+
+	}
+
+}

@@ -1,0 +1,301 @@
+.skills_section {
+	padding-bottom: 50px;
+	overflow: visible;
+	display: block;
+
+	.left_brain_text {
+		float: left;
+		width: 250px;				
+		margin-left: 25px;
+		margin-bottom: 60px;
+
+		.brain_ror {
+			height: 120px;		
+			padding-top: 30px;				
+
+			.brain_ror_title {
+				float: left;
+				width: 150px;				
+				text-align: center;
+
+			}
+
+			.brain_ror_line {
+				float: left;
+				width: 95px;				
+			}
+
+			.brain_ror_line:after {
+				content:"";
+				position:absolute;
+				border-top:1px solid #fbbb86;
+				width:150px;
+				transform: rotate(20deg);
+				-ms-transform: rotate(20deg);
+				-webkit-transform: rotate(20deg);
+				-moz-transform: rotate(20deg);
+				-o-transform: rotate(20deg);
+
+				transform-origin: -40% 0%;
+				-ms-transform-origin: -40% 0%;
+				-webkit-transform-origin: -40% 0%;
+				-moz-transform-origin: -40% 0%;
+				-o-transform-origin: -40% 0%;
+			}
+		}
+
+		.brain_jquery {			
+			margin-top: 70px;
+			height: 50px;
+
+			.brain_jquery_title {
+				float: left;
+				width: 150px;				
+				text-align: center;
+			}
+
+			.brain_jquery_line {
+				float: left;
+				width: 95px;
+				
+			}
+
+			.brain_jquery_line:after {
+				content:"";
+				position:absolute;
+				border-top:1px solid #88bb90;
+				width:105px;
+				transform: rotate(12deg);
+				-ms-transform: rotate(12deg);
+				-webkit-transform: rotate(12deg);
+				-moz-transform: rotate(12deg);
+				-o-transform: rotate(12deg);
+
+				transform-origin: -100% 0%;
+				
+			}
+		}
+
+		.brain_html {			
+			margin-top: 120px;
+			height: 100px;
+
+			.brain_html_title {
+				float: left;
+				width: 150px;				
+				text-align: center;
+			}
+
+			.brain_html_line {
+				float: left;
+				width: 95px;
+				
+			}
+
+			.brain_html_line:after {
+				content:"";
+				position:absolute;
+				border-top:1px solid #c59cba;
+				width:130px;
+				transform: rotate(-10deg);
+				-ms-transform: rotate(-10deg);
+				-webkit-transform: rotate(-10deg);
+				-moz-transform: rotate(-10deg);
+				-o-transform: rotate(-10deg);
+
+				transform-origin: 0% 0%;
+				-ms-transform-origin: 0% 0%;
+				-webkit-transform-origin: 0% 0%;
+				-moz-transform-origin: 0% 0%;
+				-o-transform-origin: 0% 0%;
+			}
+		}
+	}
+
+	.right_brain_text {
+		float: right;
+		width: 250px;
+		margin-right: 25px;		
+		height: 435px;
+
+		.brain_swift {
+			height: 70px;	
+			padding-top: 20px;	
+			position: relative;	
+
+			.brain_swift_title {
+				float: right;
+				width: 150px;				
+				text-align: center;
+			}
+
+			.brain_swift_line {				
+				width: 120px;				
+				position: absolute;
+				left: -50px;
+				top: 20px;
+			}
+
+			.brain_swift_line:after {
+				content:"";
+				position:absolute;
+				border-top:1px solid #64bfda;
+				width:180px;
+				transform: rotate(-20deg);
+				-ms-transform: rotate(-20deg);
+				-webkit-transform: rotate(-20deg);
+				-moz-transform: rotate(-20deg);
+				-o-transform: rotate(-20deg);
+
+				transform-origin: 150% 0%;
+				-ms-transform-origin: 150% 0%;
+				-webkit-transform-origin: 150% 0%;
+				-moz-transform-origin: 150% 0%;
+				-o-transform-origin: 150% 0%;
+			}
+		}
+
+		.brain_sql {
+			height: 150px;		
+			margin-top: 30px;
+			position: relative;				
+
+			.brain_sql_title {				
+				width: 150px;				
+				text-align: center;
+				
+				position: absolute;
+				top: 30px;
+				right: 0;
+			}
+
+			.brain_sql_line {				
+				width: 120px;
+				height: 200px;
+				position: absolute;
+				left: -50px;
+				top: 0px;
+			}
+
+			.brain_sql_line:after {
+				content:"";
+				position:absolute;
+				border-top:1px solid #fabeb4;
+				width:180px;
+				transform: rotate(-25deg);
+				
+				transform-origin: 180% 0%;
+				-ms-transform-origin: 180% 0%;
+				-webkit-transform-origin: 180% 0%;
+				-moz-transform-origin: 180% 0%;
+				-o-transform-origin: 180% 0%;
+			}
+		}
+
+		.brain_php {
+			height: 110px;		
+			position: relative;				
+
+			.brain_php_title {				
+				width: 150px;				
+				text-align: center;
+				
+				position: absolute;
+				top: 0px;
+				right: 0;
+			}
+
+			.brain_php_line {				
+				width: 120px;
+				height: 200px;
+				position: absolute;
+				left: -35px;
+				top: 0px;
+			}
+
+			.brain_php_line:after {
+				content:"";
+				position:absolute;
+				border-top:1px solid #fde1a4;
+				width:180px;
+				transform: rotate(-15deg);
+				-ms-transform: rotate(-15deg);
+				-webkit-transform: rotate(-15deg);
+				-moz-transform: rotate(-15deg);
+				-o-transform: rotate(-15deg);
+				
+
+				transform-origin: 150% 0%;
+				-ms-transform-origin: 150% 0%;
+				-webkit-transform-origin: 150% 0%;
+				-moz-transform-origin: 150% 0%;
+				-o-transform-origin: 150% 0%;
+			}
+		}
+
+		.brain_wordpress {
+			height: 140px;		
+			margin-top: 10px;
+			position: relative;				
+
+			.brain_wordpress_title {				
+				width: 150px;				
+				text-align: center;
+				
+				position: absolute;
+				top: 0px;
+				right: 0;
+			}
+
+			.brain_wordpress_line {				
+				width: 120px;
+				height: 200px;
+				position: absolute;
+				left: -50px;
+				top: 0px;
+			}
+
+			.brain_wordpress_line:after {
+				content:"";
+				position:absolute;
+				border-top:1px solid #e1e1e1;
+				width:160px;
+				transform: rotate(5deg);
+				-ms-transform: rotate(5deg);
+				-webkit-transform: rotate(5deg);
+				-moz-transform: rotate(5deg);
+				-o-transform: rotate(5deg);
+				
+
+				transform-origin: -70% 0%;
+				-ms-transform-origin: -70% 0%;
+				-webkit-transform-origin: -70% 0%;
+				-moz-transform-origin: -70% 0%;
+				-o-transform-origin: -70% 0%;
+			}
+		}
+
+
+	}
+
+	.brain_title {
+		font-size: 18px;
+		letter-spacing: 2px;
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.brain_title:hover {
+		text-shadow: 0px 0 10px #fff;
+	}
+
+	.brain_percentage {
+		font-size: 18px;
+	}
+
+	.brain {
+		float: left;
+		margin: auto;
+		width: 339px;			
+	}
+}

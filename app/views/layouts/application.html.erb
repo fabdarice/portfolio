@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fabrice Cheng Portfolio</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+  
+</head>
+<body>
+<script type="text/javascript">
+	jQuery(function() {
+		$(".footer_link").hover(
+			function() {						
+	         $(this).prev(".hvr-bounce-in:first").addClass('hover')
+	      },
+         function() {
+				$(this).prev(".hvr-bounce-in:first").removeClass('hover');
+			}
+		);
+	});
+	
+</script>
+
+<div id="header">
+	<div class="menu">
+		<div class="logo"><%= link_to (image_tag "logo.png"), root_path %></div>
+		<div class="menuitems">
+			<ul>
+				<li><%= link_to "About Me", root_path, class: "#{current_page?(root_path) ? "active_link" : "sliding-middle-out"}" %></li>
+				<li><%= link_to "Skills", skills_path, class: "#{current_page?(skills_path) ? "active_link" : "sliding-middle-out"}" %></li>
+				<li><%= link_to "Experience", experience_path, class: "#{current_page?(experience_path) ? "active_link" : "sliding-middle-out"}" %></li>
+				<li><%= link_to "Portfolio", portfolios_path, class: "#{current_page?(portfolios_path) ? "active_link" : "sliding-middle-out"}" %></li>
+			</ul>
+		</div>	
+	</div>
+</div>
+
+<div id="main">
+	<%= yield %>
+</div>
+
+<div id="footer">                
+	<%= image_tag "icon_email.png", style: "width: 30px; float: left;", class: "hvr-bounce-in" %>	
+	 <div style="float: left;margin-left: 10px; margin-top: 5px;" class="footer_link"><a href="mailto:fabrice.cheng@gmail.com">fabrice.cheng@gmail.com</a></div>
+	<%= image_tag "icon_phone.png", style: "width: 20px; float: left; margin-left: 140px; padding-top: 3px;", class: "hvr-bounce-in" %> <div style="float: left;margin-left: 10px; margin-top: 5px;" class="footer_link">+1 (424) 543-4055</div> 
+	<%= image_tag "icon_github.png", style: "width: 25px; float: left; margin-left: 140px; padding-top: 0px;", class: "hvr-bounce-in" %> <div style="float: left;margin-left: 10px; margin-top: 5px;" class="footer_link"><a href="https://github.com/fabdarice" target="_blank">Github</a></div> 
+	<%= image_tag "icon_linked_in.png", style: "width: 20px; float: left; margin-left: 140px; padding-top: 3px;", class: "hvr-bounce-in" %> <div style="float: left;margin-left: 10px; margin-top: 5px;" class="footer_link"><a href="https://www.linkedin.com/in/fabricecheng" target="_blank">LinkedIn</a></div> 	
+</div>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<script type="text/javascript">
+	$(function() {
+		// Ruby on Rails
+		$('.one_project').hover(function() {
+			$(this).find('.greater_sign').addClass('active'); 
+			$('.one_project').not(this).addClass('not_selected');
+		},
+			function() {
+				$(this).find('.greater_sign').removeClass('active');
+				$('.one_project').not(this).removeClass('not_selected');
+			}
+		);			
+	})
+</script>
+
+<div class="portfolio_section">	
+	<div class="portfolio_left">
+		<%= link_to portfolio_imedseminar_path do %>
+			<div class="one_project">			
+				<%= image_tag "projects/imedseminar_project.png" %>			
+				<div class="project_description">
+					IMED Seminar
+				</div>
+				<div class="project_skills">
+					<ul>
+						<li>Ruby on Rails</li>
+						<li>MySQL</li>
+						<li>JQuery</li>
+					</ul>
+				</div>
+				<div class="greater_sign">
+					&#187;
+				</div>
+			</div>
+		<% end %>
+
+		<div class="one_project">
+			<%= image_tag "projects/greenlys.png" %>
+			<div class="project_description">
+				IMED Seminar
+			</div>
+			<div class="project_skills">
+				<ul>
+					<li>Ruby on Rails</li>
+					<li>MySQL</li>
+					<li>JQuery</li>
+				</ul>
+			</div>
+			<div class="greater_sign">
+				&#187;
+			</div>
+		</div>
+	</div>
+	<div class="portfolio_center">
+		<div class="one_project">
+			<%= image_tag "projects/Ultimate_Forecaster01.png" %>
+			<div class="project_description">
+				IMED Seminar
+			</div>
+			<div class="project_skills">
+				<ul>
+					<li>Ruby on Rails</li>
+					<li>MySQL</li>
+					<li>JQuery</li>
+				</ul>
+			</div>
+			<div class="greater_sign">
+				&#187;
+			</div>
+		</div>
+		<div class="one_project">
+			<%= image_tag "projects/Uniprime01.png" %>
+			<div class="project_description">
+				IMED Seminar
+			</div>
+			<div class="project_skills">
+				<ul>
+					<li>Ruby on Rails</li>
+					<li>MySQL</li>
+					<li>JQuery</li>
+				</ul>
+			</div>
+			<div class="greater_sign">
+				&#187;
+			</div>
+		</div>
+		<div class="one_project">
+			<%= image_tag "projects/Reachjobs01.png" %>
+			<div class="project_description">
+				IMED Seminar
+			</div>
+			<div class="project_skills">
+				<ul>
+					<li>Ruby on Rails</li>
+					<li>MySQL</li>
+					<li>JQuery</li>
+				</ul>
+			</div>
+			<div class="greater_sign">
+				&#187;
+			</div>
+		</div>
+	</div>	
+	<div class="portfolio_right">
+		<div class="one_project">
+			<%= image_tag "projects/imedseminar_project.png" %>
+			<div class="project_description">
+				IMED Seminar
+			</div>
+			<div class="project_skills">
+				<ul>
+					<li>Ruby on Rails</li>
+					<li>MySQL</li>
+					<li>JQuery</li>
+				</ul>
+			</div>
+			<div class="greater_sign">
+				&#187;
+			</div>
+		</div>
+		<div class="one_project">
+			<%= image_tag "projects/Uniprime01.png" %>
+			<div class="project_description">
+				IMED Seminar
+			</div>
+			<div class="project_skills">
+				<ul>
+					<li>Ruby on Rails</li>
+					<li>MySQL</li>
+					<li>JQuery</li>
+				</ul>
+			</div>
+			<div class="greater_sign">
+				&#187;
+			</div>
+		</div>
+		<div class="one_project">
+			<%= image_tag "projects/Reachjobs01.png" %>
+			<div class="project_description">
+				IMED Seminar
+			</div>
+			<div class="project_skills">
+				<ul>
+					<li>Ruby on Rails</li>
+					<li>MySQL</li>
+					<li>JQuery</li>
+				</ul>
+			</div>
+			<div class="greater_sign">
+				&#187;
+			</div>
+		</div>
+	</div>
+</div>	

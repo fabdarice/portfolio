@@ -1,0 +1,175 @@
+// Place all the styles related to the portfolios controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.portfolio_section {
+	.portfolio_left, .portfolio_right, .portfolio_center {
+		float: left;
+		width: 285px;							
+	}
+
+	.one_project {
+		margin-bottom: 20px;
+		position: relative;
+		background-color: #293545;
+		border: 0.01em solid #38475C;
+		padding: 10px;		
+		border-radius: 5px;
+		opacity: 1;
+		cursor: pointer;	
+		overflow: hidden;	
+
+		img {
+			width: 100%;	
+			height: 170px;	
+			margin-bottom: 5px;	
+		}
+
+		img:hover {
+
+		}
+
+		.project_description {
+			font-size: 16px;
+			letter-spacing: 2px;
+			padding-bottom: 0px;
+
+		}
+
+		.project_skills ul {			
+			list-style: none;
+			padding: 0px;
+			padding-top: 0px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+
+			li {
+				display: inline;
+				font-size: 12px;
+			}
+
+			li:not(:first-child) {
+				
+				margin-left: 5px;
+			}		
+
+			li {
+				background-color: #324F75;
+				padding: 2px 4px;
+				color: #F5F5F5;
+				border-radius: 3px;
+			}
+		}
+
+		.greater_sign {
+			position: absolute;
+			bottom: 0px;
+			right: 10px;
+			font-size: 100px;
+			color: #FCB968;
+			font-weight: 100;
+			vertical-align: text-bottom;
+			height: 100px;
+			margin-right: -50px;
+			-webkit-transition: all 0.7s ease;
+			transition: all 0.7s ease;
+			opacity: 0;
+		}
+
+		.greater_sign.active {
+			margin-right: 0px;
+			opacity: 1;
+		}
+	}
+	
+
+	.one_project.not_selected {
+		opacity: 0.3;
+	}
+
+	.portfolio_center {
+		margin-left: 20px;
+	}
+
+	.portfolio_right {
+		margin-left: 20px;
+	}
+}
+
+.portfolio_project {
+	height: 500px;	
+	position: relative;	
+
+	.project_text_description {
+		position: absolute;
+		width: 400px;
+		height: 400px;		
+		left: -400px;
+		top: 0px;
+		opacity: 0;
+		padding-top: 20px;
+
+		.project_title {
+
+			font-size: 34px;
+			font-weight: 200;
+			letter-spacing: 2px;
+		}
+
+		.project_description {
+			margin-top: 20px;
+			font-size: 15px;
+			letter-spacing: 1px;
+			font-weight: 200;
+		}
+		
+		.project_link {
+			a {
+				text-decoration: none;
+				color: #FCB968;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+		}
+
+		.project_skills {
+			margin-top: 30px;
+
+			ul {
+				padding: 0px;
+
+			}
+
+			ul li {
+				list-style: none;
+				display: inline;
+
+			}
+
+			li:not(:first-child) {
+				
+				margin-left: 5px;
+			}		
+
+			li {
+				background-color: #324F75;
+				padding: 4px 6px;
+				color: #F5F5F5;
+				border-radius: 3px;
+			}
+		}
+	}
+
+	.project_slideshow {
+		width: 400px;			
+		position: absolute;		
+		right: -400px;
+		top: 0px;				
+		opacity: 0;
+		
+	}
+}
+

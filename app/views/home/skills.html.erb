@@ -1,0 +1,144 @@
+<script type="text/javascript">
+	$(function() {
+		// Ruby on Rails
+		$('.brain_ror_image').hover(function() {
+			$('.brain_ror_title > .brain_title').addClass('showLeftTooltip'); },
+			function() {
+				$('.brain_ror_title > .brain_title').removeClass('showLeftTooltip');
+			}
+		);
+
+		// JQuery / Ajax
+		$('.brain_jquery_image').hover(function() {
+			$('.brain_jquery_title > .brain_title').addClass('showLeftTooltip'); },
+			function() {
+				$('.brain_jquery_title > .brain_title').removeClass('showLeftTooltip');
+			}
+		);
+
+		// HTML / CSS
+		$('.brain_html_image').hover(function() {
+			$('.brain_html_title > .brain_title').addClass('showLeftTooltip'); },
+			function() {
+				$('.brain_html_title > .brain_title').removeClass('showLeftTooltip');
+			}
+		);
+
+		// Swift
+		$('.brain_swift_image').hover(function() {
+			$('.brain_swift_title > .brain_title').addClass('showRightTooltip'); },
+			function() {
+				$('.brain_swift_title > .brain_title').removeClass('showRightTooltip');
+			}
+		);
+
+		// MySQL / PSQL
+		$('.brain_sql_image').hover(function() {
+			$('.brain_sql_title > .brain_title').addClass('showRightTooltip'); },
+			function() {
+				$('.brain_sql_title > .brain_title').removeClass('showRightTooltip');
+			}
+		);
+
+		// PHP
+		$('.brain_php_image').hover(function() {
+			$('.brain_php_title > .brain_title').addClass('showRightTooltip'); },
+			function() {
+				$('.brain_php_title > .brain_title').removeClass('showRightTooltip');
+			}
+		);
+
+		// Wordpress
+		$('.brain_wordpress_image').hover(function() {
+			$('.brain_wordpress_title > .brain_title').addClass('showRightTooltip'); },
+			function() {
+				$('.brain_wordpress_title > .brain_title').removeClass('showRightTooltip');
+			}
+		);
+		
+	})
+</script>
+
+
+
+<div class="skills_section">
+	<div class="left_brain_text">
+		<div class="brain_ror">
+			<div class="brain_ror_title">
+				<a href="#" class="brain_title hvr-grow tooltip-left" style="color: #fbbb86" data-tooltip="6 years of experience">Ruby on Rails</a><br>
+				<span class="brain_percentage">27%</span>
+			</div>
+			<div class="brain_ror_line">
+			</div>
+			
+		</div>
+		
+		<div class="brain_jquery">
+			<div class="brain_jquery_title">
+				<a href="#" class="brain_title hvr-grow tooltip-left" style="color: #88bb90" data-tooltip="5 years of experience">JQuery / Ajax</a><br>
+				<span class="brain_percentage">10%</span>
+			</div>
+			<div class="brain_jquery_line">
+			</div>
+		</div>
+
+		<div class="brain_html">
+			<div class="brain_html_title">
+				<a href="#" class="brain_title hvr-grow tooltip-left" style="color: #c59cba" data-tooltip="8 years of experience">HTML / CSS</a><br>
+				<span class="brain_percentage">13%</span>
+			</div>
+			<div class="brain_html_line">
+			</div>
+		</div>
+	</div>
+
+	<div class="brain">
+		<%= image_tag "brain_01.png", style: 'float: left;', class: 'brain_ror_image' %>
+		<%= image_tag "brain_02.png", style: 'float: left;', class: 'brain_swift_image' %>
+		<%= image_tag "brain_03.png", style: 'float: left;', class: 'brain_jquery_image' %>		
+		<%= image_tag "brain_04.png", style: 'float: left;', class: 'brain_sql_image' %>
+		<%= image_tag "brain_05.png", style: 'float: left;', class: 'brain_html_image' %>
+		<%= image_tag "brain_06.png", style: 'float: left;', class: 'brain_php_image' %>
+		<%= image_tag "brain_07.png", style: 'float: left;', class: 'brain_wordpress_image' %>
+	</div>
+
+	<div class="right_brain_text">
+		<div class="brain_swift">
+			<div class="brain_swift_line">
+			</div>
+			<div class="brain_swift_title">
+				<a href="#" class="brain_title hvr-grow tooltip-right" style="color: #64bfda" data-tooltip="2 years of experience">Swift</a><br>
+				<span class="brain_percentage">27%</span>
+			</div>
+		</div>
+
+		<div class="brain_sql">
+			<div class="brain_sql_line">
+			</div>
+			<div class="brain_sql_title">
+				<a href="#" class="brain_title hvr-grow  tooltip-right" style="color: #fabeb4" data-tooltip="5 years of experience">MySQL / PSQL</a><br>
+				<span class="brain_percentage">10%</span>
+			</div>
+		</div>
+
+		<div class="brain_php">
+			<div class="brain_php_line">
+			</div>
+			<div class="brain_php_title">
+				<a href="#" class="brain_title hvr-grow  tooltip-right" style="color: #fde1a4" data-tooltip="3 years of experience">PHP</a><br>
+				<span class="brain_percentage">8%</span>
+			</div>
+		</div>
+
+		<div class="brain_wordpress">
+			<div class="brain_wordpress_line">
+			</div>
+			<div class="brain_wordpress_title">
+				<a href="#" class="brain_title hvr-grow  tooltip-right" style="color: #e1e1e1" data-tooltip="2 years of experience">WordPress</a><br>
+				<span class="brain_percentage">7%</span>
+			</div>
+		</div>
+
+		
+	</div>
+</div>
