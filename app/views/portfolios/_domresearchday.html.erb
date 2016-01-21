@@ -1,0 +1,36 @@
+<script type="text/javascript">	
+	$(function() {	
+		$(".project_text_description").delay("slow").animate({ left: '-25px', opacity: '1'}, 1000);
+		$(".project_slideshow").delay("slow").animate({ right: '-25px', opacity: '1'}, 1000);
+		$('#slider').nivoSlider();	
+	});
+</script>
+<div class="portfolio_project">
+	<div class="project_text_description">
+		<span class="project_title"><span class="orange_underline">D</span>OM <span class="orange_underline">R</span>esearch <span class="orange_underline">D</span>ay</span>
+		<br><br>
+		<p  class="project_description">
+			DOM Research Day is the web support of a recurrent UCLA event that occures once every year.<br><br>
+			It gathers abstracts/posters of research from UCLA physicians that are then evaluated by a selection of judges and could be rewarded by prizes.<br>			
+		</p>
+		<p class="project_link">Link : <a href="http://domresearchday.med.ucla.edu" target="__blank">http://domresearchday.med.ucla.edu</a></p>
+		<div class="project_skills">
+			<ul>
+				<li>Ruby on Rails</li>
+				<li>JQuery</li>
+				<li>MySQL</li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="project_slideshow">
+      <div class="slider-wrapper theme-default">    
+			<div id="slider" class="nivoSlider">
+				<%= image_tag "projects/domresearchday_01.png" %>
+			   <%= image_tag "projects/domresearchday_02.png" %>
+			   <%= image_tag "projects/domresearchday_03.png" %>
+			   <%= image_tag "projects/domresearchday_04.png" %>		      
+			</div>		
+		</div>	
+	</div>
+</div>

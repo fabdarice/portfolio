@@ -1,0 +1,36 @@
+<script type="text/javascript">	
+	$(function() {	
+		$(".project_text_description").delay("slow").animate({ left: '-25px', opacity: '1'}, 800);
+		$(".project_slideshow").delay("slow").animate({ right: '-25px', opacity: '1'}, 800);
+		$('#slider').nivoSlider();	
+	});
+</script>
+<div class="portfolio_project">
+	<div class="project_text_description">
+		<span class="project_title"><span class="orange_underline">U</span>niprime2</span>
+		<br><br>
+		<p  class="project_description">
+			UniPrime2 is an web service which automatically designs large sets of universal primers by simply inputting a GeneID reference. <br><br>
+			UniPrime2 automatically retrieves and aligns orthologous sequences from GenBank, identifies regions of conservation within the alignment and generates suitable primers that can amplify variable genomic regions.			
+		</p>		
+		<div class="project_skills">
+			<ul>
+				<li>PHP</li>
+				<li>Perl</li>
+				<li>JQuery</li>
+				<li>PostGreSQL</li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="project_slideshow">
+      <div class="slider-wrapper theme-default">    
+			<div id="slider" class="nivoSlider">
+				<%= image_tag "projects/uniprime_01.png" %>
+			   <%= image_tag "projects/uniprime_02.png" %>
+			   <%= image_tag "projects/uniprime_03.png" %>
+			   <%= image_tag "projects/uniprime_04.png" %>			    
+			</div>		
+		</div>	
+	</div>
+</div>

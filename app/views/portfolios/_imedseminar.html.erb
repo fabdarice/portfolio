@@ -1,8 +1,7 @@
 <script type="text/javascript">	
 	$(function() {	
-
-		$(".project_text_description").delay("slow").animate({ left: '0px', opacity: '1'}, 1000);
-		$(".project_slideshow").delay("slow").animate({ right: '0px', opacity: '1'}, 1000);
+		$(".project_text_description").delay("slow").animate({ left: '-25px', opacity: '1'}, 1000);
+		$(".project_slideshow").delay("slow").animate({ right: '-25px', opacity: '1'}, 1000);
 		$('#slider').nivoSlider();	
 	});
 </script>
@@ -26,9 +25,12 @@
 	<div class="project_slideshow">
       <div class="slider-wrapper theme-default">    
 			<div id="slider" class="nivoSlider">
-			    <%= image_tag "projects/imedseminar_project.png" %>
-			    <%= image_tag "projects/Uniprime01.png"  %>
-			    <%= image_tag "projects/greenlys.png"  %>
+				<%= image_tag "projects/imedseminar_01.png" %>
+			   <%= image_tag "projects/imedseminar_02.png" %>
+			   <%= image_tag "projects/imedseminar_03.png" %>
+			   <%= image_tag "projects/imedseminar_04.png" %>
+			   <%= image_tag "projects/imedseminar_05.png" %>
+			   <%= image_tag "projects/imedseminar_06.png" %>
 			</div>		
 		</div>	
 	</div>

@@ -1,0 +1,36 @@
+<script type="text/javascript">	
+	$(function() {	
+		$(".project_text_description").delay("slow").animate({ left: '-25px', opacity: '1'}, 1000);
+		$(".project_slideshow").delay("slow").animate({ right: '-25px', opacity: '1'}, 1000);
+		$('#slider').nivoSlider();	
+	});
+</script>
+<div class="portfolio_project">
+	<div class="project_text_description">
+		<span class="project_title"><span class="orange_underline">I</span>M <span class="orange_underline">R</span>esidency</span>
+		<br><br>
+		<p  class="project_description">
+			UCLA Internal Medicine Residency Program website.<br><br>
+			Imresidency displays all the information regarding the UCLA internal medicine residency program, from the application process to the people surrounding it and much more.
+		</p>
+		<p class="project_link">Link : <a href="http://imresidency.med.ucla.edu" target="__blank">http://imresidency.med.ucla.edu</a></p>
+		<div class="project_skills">
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>MySQL</li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="project_slideshow">
+      <div class="slider-wrapper theme-default">    
+			<div id="slider" class="nivoSlider">
+				<%= image_tag "projects/imresidency_01.png" %>
+			   <%= image_tag "projects/imresidency_02.png" %>
+			   <%= image_tag "projects/imresidency_03.png" %>
+			   <%= image_tag "projects/imresidency_04.png" %>			   
+			</div>		
+		</div>	
+	</div>
+</div>

@@ -1,0 +1,45 @@
+<script type="text/javascript">	
+	$(function() {	
+		$(".project_text_description").delay("slow").animate({ left: '-25px', opacity: '1'}, 1000);
+		$(".project_slideshow").delay("slow").animate({ right: '-25px', opacity: '1'}, 1000);
+		$('#slider').nivoSlider();	
+	});
+</script>
+<div class="portfolio_project">
+	<div class="project_text_description">
+		<span class="project_title"><span class="orange_underline">C</span>hallfie</span>
+		<br><br>
+		<p  class="project_description">
+			Challfie (iOS & Android) is a new social network that takes selfies to the next level by adding a fun and competitive spin. <br><br>
+			It incorporates the concept of challenges that users must complete and have approved by their friends. <br>
+			The more challenges that are completed and approved, the more points users earn, allowing them to reach higher levels and unlock new challenges.
+			<br><br>
+			Challfie app is available on iOS and Android.
+		</p>
+		<p class="project_link">Link : <a href="https://challfie.com" target="__blank">https://challfie.com</a></p>
+		<div class="project_skills">
+			<ul>
+				<li>Swift</li>
+				<li>Ruby on Rails</li>				
+				<li>Java</li>
+				<li>JQuery</li>
+				<li>MySQL</li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="project_slideshow">
+      <div class="slider-wrapper theme-default">    
+			<div id="slider" class="nivoSlider">
+				<%= image_tag "projects/challfie_01.png" %>
+				<%= image_tag "projects/challfie_01_ios.png" %>
+				<%= image_tag "projects/challfie_02_ios.png" %>
+			   <%= image_tag "projects/challfie_02.png" %>
+			   <%= image_tag "projects/challfie_03.png" %>
+			   <%= image_tag "projects/challfie_04.png"  %>			    
+		      <%= image_tag "projects/challfie_05.png"  %>			    
+		      <%= image_tag "projects/challfie_06.png"  %>			    
+			</div>		
+		</div>	
+	</div>
+</div>

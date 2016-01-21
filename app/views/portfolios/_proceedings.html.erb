@@ -1,0 +1,33 @@
+<script type="text/javascript">	
+	$(function() {	
+		$(".project_text_description").delay("slow").animate({ left: '-25px', opacity: '1'}, 1000);
+		$(".project_slideshow").delay("slow").animate({ right: '-25px', opacity: '1'}, 1000);
+		$('#slider').nivoSlider();	
+	});
+</script>
+<div class="portfolio_project">
+	<div class="project_text_description">
+		<span class="project_title"><span class="orange_underline">P</span>roceedings</span>
+		<br><br>
+		<p  class="project_description">
+			UCLA Proceedings website gathers all the research papers submitted by UCLA physicians since 2005.
+		</p>
+		<p class="project_link">Link : <a href="http://proceedings.med.ucla.edu" target="__blank">http://proceedings.med.ucla.edu</a></p>
+		<div class="project_skills">
+			<ul>
+				<li>WordPress</li>				
+				<li>PHP</li>
+				<li>MySQL</li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="project_slideshow">
+      <div class="slider-wrapper theme-default">    
+			<div id="slider" class="nivoSlider">
+				<%= image_tag "projects/proceedings_01.png" %>
+			   <%= image_tag "projects/proceedings_02.png" %>			   
+			</div>		
+		</div>	
+	</div>
+</div>

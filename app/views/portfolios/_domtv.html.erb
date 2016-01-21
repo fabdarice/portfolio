@@ -1,0 +1,38 @@
+<script type="text/javascript">	
+	$(function() {	
+		$(".project_text_description").delay("slow").animate({ left: '-25px', opacity: '1'}, 800);
+		$(".project_slideshow").delay("slow").animate({ right: '-25px', opacity: '1'}, 800);
+		$('#slider').nivoSlider();	
+	});
+</script>
+<div class="portfolio_project">
+	<div class="project_text_description">
+		<span class="project_title"><span class="orange_underline">D</span>OM <span class="orange_underline">T</span>V</span>
+		<br><br>
+		<p  class="project_description">
+			UCLA Department of Medicine online seminar resource. <br><br>
+			DOM-TV is an interactive space created to showcase some of the outstanding educational conferences that occur every day at UCLA.<br>
+			Topics range from cutting edge research to clinical best practices and much more. 
+		</p>
+		<p class="project_link">Link : <a href="http://domtv.med.ucla.edu" target="__blank">http://domtv.med.ucla.edu</a></p>
+		<div class="project_skills">
+			<ul>
+				<li>Ruby on Rails</li>
+				<li>JQuery</li>
+				<li>MySQL</li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="project_slideshow">
+      <div class="slider-wrapper theme-default">    
+			<div id="slider" class="nivoSlider">
+				<%= image_tag "projects/domtv_01.png" %>
+			   <%= image_tag "projects/domtv_02.png" %>
+			   <%= image_tag "projects/domtv_03.png" %>
+			   <%= image_tag "projects/domtv_04.png" %>			    
+		      <%= image_tag "projects/domtv_05.png" %>			    		      
+			</div>		
+		</div>	
+	</div>
+</div>

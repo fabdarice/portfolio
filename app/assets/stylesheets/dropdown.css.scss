@@ -1,0 +1,23 @@
+.dropdownwrap{
+    height:auto;
+    width: 100%;
+    float:left;
+    margin:0px 0px 20px 0px;
+    background-color:#293545;
+    display:none;
+    padding:20px;
+    position: relative;
+}
+ 
+.container{
+    width:100%;
+    float:left;
+}
+
+.close_dropdown {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;    
+    cursor: pointer;
+ }

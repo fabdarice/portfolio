@@ -1,0 +1,39 @@
+<script type="text/javascript">	
+	$(function() {	
+		$(".project_text_description").delay("slow").animate({ left: '-25px', opacity: '1'}, 1000);
+		$(".project_slideshow").delay("slow").animate({ right: '-25px', opacity: '1'}, 1000);
+		$('#slider').nivoSlider();	
+	});
+</script>
+<div class="portfolio_project">
+	<div class="project_text_description">
+		<span class="project_title"><span class="orange_underline">R</span>eachJobs</span>
+		<br><br>
+		<p  class="project_description">
+			ReachJobs is an online resume and portfolio creator.<br><br>
+			It offers a simple and customize way to display your assets when applying for a job, a position or to have a reference online.<br><br>
+
+			Showcase your experience and your project with your personal profile reorganize in three parts : About me/Resume/Portfolio.
+		</p>
+		<p class="project_link">Link : <a href="http://reachjobs.herokuapp.com" target="__blank">http://reachjobs.herokuapp.com</a></p>
+		<div class="project_skills">
+			<ul>
+				<li>Ruby on Rails</li>
+				<li>JQuery</li>
+				<li>Ajax</li>
+				<li>PostgreSQL</li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="project_slideshow">
+      <div class="slider-wrapper theme-default">    
+			<div id="slider" class="nivoSlider">
+				<%= image_tag "projects/reachjobs_01.png" %>
+			   <%= image_tag "projects/reachjobs_02.png" %>
+			   <%= image_tag "projects/reachjobs_03.png" %>
+			   <%= image_tag "projects/reachjobs_04.png" %>		      
+			</div>		
+		</div>	
+	</div>
+</div>
