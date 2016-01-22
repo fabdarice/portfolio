@@ -1,15 +1,19 @@
 <script type="text/javascript">
 	$(function() {
-		// Ruby on Rails
-		$('.one_project').hover(function() {
-			$(this).find('.greater_sign').addClass('active'); 
-			$('.one_project').not(this).addClass('not_selected');
-		},
-			function() {
-				$(this).find('.greater_sign').removeClass('active');
-				$('.one_project').not(this).removeClass('not_selected');
-			}
-		);	
+		
+		function bind_project_hover() {
+			$('.one_project').hover(function() {
+				$(this).find('.greater_sign').addClass('active'); 
+				$('.one_project').not(this).addClass('not_selected');
+			},
+				function() {
+					$(this).find('.greater_sign').removeClass('active');
+					$('.one_project').not(this).removeClass('not_selected');
+				}
+			);
+		}
+			
+		bind_project_hover();	
 
 		$('.one_project').on('click',function(){		
 			var $project = $(this).attr('class').split(' ')[1];			
@@ -25,22 +29,33 @@
 	   	$('.dropdownwrap').slideUp();	 
 	   });
 
-	   $('.section_left_arrow').on('click', function(){ 
-	   	
-	   	$('.first_section').animate({left: '0px'}, 1000);
+	   $('.section_left_arrow').on('click', function(){ 	   	
 	   	$('.first_section').show();
-	   	$('.second_section').animate({right: '-1200px'}, 1000);
 	   	$('.section_left_arrow').hide();
-	   	$('.section_right_arrow').show();
+	   	$('.one_project').unbind('mouseenter mouseleave');
+
+	   	$('.first_section').animate({left: '0px'}, 1000, function() {
+	   		$('.section_right_arrow').show();	
+	   		bind_project_hover();
+	   	});
+	   	//$('.first_section').show();
+	   	$('.second_section').animate({right: '-1200px'}, 1000, function() {
+	   		$('.second_section').hide();
+	   	});	   	
 	   });
 
 	   $('.section_right_arrow').on('click', function(){ 
-	   	
-	   	$('.first_section').animate({left: '-1200px'}, 1000);
-	   	$('.second_section').animate({right: '0px'}, 1000);
 	   	$('.second_section').show();
-	   	$('.section_left_arrow').show();
 	   	$('.section_right_arrow').hide();
+	   	$('.one_project').unbind('mouseenter mouseleave');
+
+	   	$('.first_section').animate({left: '-1200px'}, 1000, function() {
+	   		$('.first_section').hide();
+	   	});
+	   	$('.second_section').animate({right: '0px'}, 1000, function() {
+	   		$('.section_left_arrow').show();
+	   		bind_project_hover();
+	   	});
 	   });
 
 	});
