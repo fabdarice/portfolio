@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @font-face {
-    font-family: 'Helvetica Neue Fab';
+    font-family: 'Helvetica Neue';
     src: font-url('HelveticaNeue-Light.otf') format('truetype');    
 }
 
@@ -11,7 +11,7 @@ body {
 	font-size: 14px;
 	margin:0;
    padding:0;
-   font-family: "Helvetica Neue Fab", "Arial", sans-serif;;   
+   font-family: "Helvetica Neue", "Arial", sans-serif;;   
    background-image: url("dark_navy_background.jpg");   
    color: #F5F5F5;
 }
